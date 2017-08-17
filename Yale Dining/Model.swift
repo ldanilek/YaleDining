@@ -30,7 +30,7 @@ struct MenuItem {
     let mealName: String
     let menuDate: Date
     let name: String
-    let id: Int
+    let id: Int?
     let locationName: String
 }
 
@@ -119,9 +119,7 @@ func parseMenuItem(_ dict: [String: Any]) throws -> MenuItem {
     guard let mealName = dict["MEALNAME"] as? String else {
         throw err(msg: "MEALNAME must be a string")
     }
-    guard let id = (dict["MENUITEMID"] as? NSNumber)?.intValue else {
-        throw err(msg: "MENUITEMID must be an int")
-    }
+    let id = (dict["MENUITEMID"] as? NSNumber)?.intValue
     guard let name = dict["MENUITEM"] as? String else {
         throw err(msg: "MENUITEM must be a string")
     }

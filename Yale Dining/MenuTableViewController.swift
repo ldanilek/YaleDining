@@ -47,8 +47,16 @@ class MenuTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "menu_cell", for: indexPath)
         let menuItem = self.menu[indexPath.row]
         cell.textLabel?.text = menuItem.name
+        if menuItem.id != nil {
+            cell.accessoryType = .disclosureIndicator
+        }
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        let menuItem = self.menu[indexPath.row]
+        return menuItem.id != nil
     }
 
     /*
