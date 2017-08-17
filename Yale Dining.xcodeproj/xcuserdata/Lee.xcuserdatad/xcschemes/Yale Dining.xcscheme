@@ -26,7 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "NO">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,6 +35,16 @@
                BlueprintIdentifier = "9BCA59401F44B2A10052A0E9"
                BuildableName = "Yale DiningTests.xctest"
                BlueprintName = "Yale DiningTests"
+               ReferencedContainer = "container:Yale Dining.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9BCA597B1F44B85C0052A0E9"
+               BuildableName = "Yale DiningEarlGreyTests.xctest"
+               BlueprintName = "Yale DiningEarlGreyTests"
                ReferencedContainer = "container:Yale Dining.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -50,6 +60,13 @@
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = 'DYLD_INSERT_LIBRARIES'
+            value = '@executable_path/EarlGrey.framework/EarlGrey'
+            isEnabled = 'YES'>
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
