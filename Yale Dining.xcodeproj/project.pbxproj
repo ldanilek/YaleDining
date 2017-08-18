@@ -11,6 +11,8 @@
 		87370B3FFD68EB4A10C9C691 /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = 9D760ECF4C2A11A4DC53B295 /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		9BC08ACA1F44BBBA00F27B1B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC08AC91F44BBBA00F27B1B /* Model.swift */; };
 		9BC08ACE1F454E0800F27B1B /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC08ACD1F454E0800F27B1B /* MenuTableViewController.swift */; };
+		9BC08AD01F46420300F27B1B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC08ACF1F46420200F27B1B /* MapViewController.swift */; };
+		9BC08AD21F46421300F27B1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC08AD11F46421300F27B1B /* MapKit.framework */; };
 		9BCA59311F44B2A00052A0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA59301F44B2A00052A0E9 /* AppDelegate.swift */; };
 		9BCA59331F44B2A00052A0E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA59321F44B2A00052A0E9 /* ViewController.swift */; };
 		9BCA59361F44B2A00052A0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCA59341F44B2A00052A0E9 /* Main.storyboard */; };
@@ -77,6 +79,8 @@
 		813B5EF21BC894EC0A6E9879 /* Pods-Yale DiningEarlGreyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yale DiningEarlGreyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yale DiningEarlGreyTests/Pods-Yale DiningEarlGreyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BC08AC91F44BBBA00F27B1B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9BC08ACD1F454E0800F27B1B /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		9BC08ACF1F46420200F27B1B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9BC08AD11F46421300F27B1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9BCA592D1F44B2A00052A0E9 /* Yale Dining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yale Dining.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCA59301F44B2A00052A0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BCA59321F44B2A00052A0E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC08AD21F46421300F27B1B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +149,7 @@
 		70BD020B2BE147EC6B3612D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BC08AD11F46421300F27B1B /* MapKit.framework */,
 				CCAEA7F4F124C8911327CE95 /* Pods_Yale_DiningEarlGreyTests.framework */,
 			);
 			name = Frameworks;
@@ -192,6 +198,7 @@
 				9BCA59321F44B2A00052A0E9 /* ViewController.swift */,
 				9BCA59761F44B6A40052A0E9 /* HallListTableViewController.swift */,
 				9BC08ACD1F454E0800F27B1B /* MenuTableViewController.swift */,
+				9BC08ACF1F46420200F27B1B /* MapViewController.swift */,
 				9BCA59341F44B2A00052A0E9 /* Main.storyboard */,
 				9BCA59371F44B2A00052A0E9 /* Assets.xcassets */,
 				9BCA59391F44B2A00052A0E9 /* LaunchScreen.storyboard */,
@@ -454,6 +461,7 @@
 				9BCA595C1F44B38C0052A0E9 /* DiskManager.swift in Sources */,
 				9BCA595B1F44B38C0052A0E9 /* CachedAPIPortalMock.swift in Sources */,
 				9BCA59311F44B2A00052A0E9 /* AppDelegate.swift in Sources */,
+				9BC08AD01F46420300F27B1B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
